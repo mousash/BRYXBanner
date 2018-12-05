@@ -116,7 +116,8 @@ open class Banner: UIView {
     /// The label that displays the banner's title.
     @objc public let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.headline)
+        label.font = UIFont(name: "IRANSans", size: 15)!
+        label.textAlignment = .center
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -125,7 +126,8 @@ open class Banner: UIView {
     /// The label that displays the banner's subtitle.
     @objc public let detailLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.preferredFont(forTextStyle: UIFont.TextStyle.subheadline)
+        label.font = UIFont(name: "IRANSans", size: 15)!
+        label.textAlignment = .center
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
